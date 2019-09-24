@@ -22,11 +22,11 @@ export default ({ data }) => (
     </div>
     <div className="body d-f">
       <div className="person-bg">
-        <Img key='asd' alt='asd' fluid={data.allImageSharp.edges[0].node.fluid} />
+        <Img key='asd' alt='asd' fluid={data.allImageSharp.edges[1].node.fluid} />
       </div>
       <div className="person-overlay"/>
       <div className="grad-bg">
-        <Img key='aa' alt='asddd' fluid={data.allImageSharp.edges[1].node.fluid} />
+        <Img key='aa' alt='asddd' fluid={data.allImageSharp.edges[0].node.fluid} />
       </div>
       <section className="content">
         <div className="textual">
