@@ -108,8 +108,8 @@ nav > ul {
   position: absolute;
   right: 30vw;
   top: 0;
-  width: 55rem;
-  height: 100vh;
+  min-width: 60rem;
+  /* height: 100vh; */
   z-index: 150;
   /* display: none; */
 }
@@ -122,14 +122,15 @@ nav > ul {
 }
 .person-bg {
   z-index: 100;
-  /* display: none; */
   position: absolute;
-  right: 0;
-  top: 0;
-  /* transform: scaleY(1.15) translateY(2rem); */
-  /* width: vw; */
-  height: 100vh;
+  right: 0px;
+  top: 0px;
+
+  min-width: 50rem;
+  width: 60rem;
+  /* height: 100vh; */
 }
+
 .content {
   z-index: 1000;
   width: 100%;
