@@ -18,7 +18,7 @@ const IndexPage = () => (
         <ul>Sign Up</ul>
       </nav>
     </div>
-    <div className="body d-f jcc">
+    <div className="body d-f">
       <img className="person-bg" src={Person} />
       <div className="person-overlay"/>
       <img className="grad-bg" src={Grad}/>

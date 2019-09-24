@@ -65,6 +65,7 @@ nav > ul {
   overflow: hidden;
   flex-grow: 2;
   align-items: flex-end;
+  justify-content: center;
 }
 .logo-text {
   width: 25rem;
@@ -221,4 +222,28 @@ nav > ul {
   border-radius: 0.4rem;
   color: white;
   font-size: 0.4rem;
+}
+
+@media screen and (max-width: 40rem) {
+  .header {
+    padding: 0.2rem;
+    padding-top: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .header > nav {
+    display: none;
+  }
+  .content {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .form {
+    margin: 0;
+    margin-top: 10rem;
+  }
+  .textual {
+    display: none;
+  }
 }
