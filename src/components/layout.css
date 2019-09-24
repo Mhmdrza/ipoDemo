@@ -106,10 +106,10 @@ nav > ul {
 }
 .grad-bg {
   position: absolute;
-  left: 0px;
+  right: 30vw;
   top: 0;
   width: 55rem;
-  /* height: 100vh; */
+  height: 100vh;
   z-index: 150;
   /* display: none; */
 }

@@ -1,7 +1,7 @@
 import React from "react"
 import '../components/layout.css'
 import Person from '../images/bg-person.png'
-import Grad from '../images/grad-bg.svg'
+import Grad from '../images/grad-bg.png'
 import FormImage from '../images/login-form.svg'
 import LogoText from '../images/logo-text.svg'
 import UserAvatar from '../images/user-avatar.svg'
