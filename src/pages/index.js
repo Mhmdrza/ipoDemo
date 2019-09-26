@@ -2,15 +2,13 @@ import React from "react"
 import '../components/layout.css'
 import FormImage from '../images/login-form.svg'
 import LogoText from '../images/logo-text.svg'
-import Img from "gatsby-image"
-import { graphql } from "gatsby"
 import UserAvatar from '../images/user-avatar.svg'
 import Lock from '../images/lock.svg'
-import PersonBG from '../components/person-bg'
+import PBG from '../images/bg-person.png'
+import GBG from '../images/grad-bg.png'
 
-export default ({ data }) => (
+export default () => (
   <div>
-    {/* <PersonBG /> */}
     <div className="header">
       <img className="logo-text" src={LogoText}/>
       <nav className="nav d-f jcc">
@@ -21,13 +19,9 @@ export default ({ data }) => (
       </nav>
     </div>
     <div className="body d-f">
-      <div className="person-bg">
-        <Img key='asd' alt='asd' fluid={data.allImageSharp.edges[1].node.fluid} />
-      </div>
+      <img src={PBG} className="person-bg"/>
       <div className="person-overlay"/>
-      <div className="grad-bg">
-        <Img key='aa' alt='asddd' fluid={data.allImageSharp.edges[0].node.fluid} />
-      </div>
+      <img src={GBG} className="grad-bg"/>
       <section className="content">
         <div className="textual">
           <p className="t1 hvr">اتاق وضعیت</p>
@@ -77,17 +71,3 @@ export default ({ data }) => (
   </div>
 )
 
-export const query = graphql`
-  query {
-    allImageSharp(filter: {fluid: {originalName: {in: ["bg-person2.png","grad-bg.png"]}}}) {
-      edges {
-        node {
-          id
-          fluid(maxWidth: 1920, quality: 100) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  }
-`

@@ -106,16 +106,16 @@ nav > ul {
 }
 .grad-bg {
   position: absolute;
-  right: 30vw;
+  left: 0;
   top: 0;
-  min-width: 60rem;
-  /* height: 100vh; */
+  min-width: 65vw;
+  height: 100vh;
   z-index: 150;
   /* display: none; */
 }
 .person-overlay {
   position: absolute;
-  background-color: rgba(55, 52, 53, 0.6);
+  background-color: rgba(55, 52, 53, 0.7);
   width: 100vw;
   z-index: 125;
   height: 100vh;
@@ -125,10 +125,9 @@ nav > ul {
   position: absolute;
   right: 0px;
   top: 0px;
-
-  min-width: 50rem;
-  width: 60rem;
-  /* height: 100vh; */
+  /* min-width: 50rem;
+  width: 60rem; */
+  height: 100vh;
 }
 
 .content {
